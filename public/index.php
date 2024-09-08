@@ -20,14 +20,11 @@
                     </div>
                     <div class="col">
                         <label for="creationDate">Creation Date</label>
-                        <input type="date" class="form-control" id="creationDate" name="created">
+                        <input type="date" class="form-control" id="creationDate" name="created" required>
                     </div>
                     <div class="col">
                         <label for="sort">Sort By</label>
-                        <select class="form-control" id="sort" name="sort">
-                            <option value="stars">Stars</option>
-                            <option value="forks">Forks</option>
-                        </select>
+                        <input type="text" class="form-control" id="sort" name="sort" value="stars">
                     </div>
                     <div class="col">
                         <label for="perPage">Results Per Page</label>
@@ -51,7 +48,7 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Fetch Repositories</button>
+                <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
         <div id="resultTable" class="mt-5"></div>
